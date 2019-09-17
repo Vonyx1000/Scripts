@@ -34,7 +34,7 @@ python newTranspose.py $prot $numHit
 
 python GetFASTA.py $email $accessionNum $prot $numHit
 
-fastaFiles="_${prot}_{numHit}_"
+fastaFiles="_${prot}_${numHit}_"
 
 echo Starting MAFFT, this will also take some time
 

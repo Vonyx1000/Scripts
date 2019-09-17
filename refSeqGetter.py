@@ -3,6 +3,7 @@ import sys
 Entrez.email = sys.argv[1]
 proteinName = sys.argv[2]
 accessionNum = sys.argv[3]
+
 print("Starting to fetch the Reference Sequence for the protein associated with the accession number:",accessionNum)
 download_handle = Entrez.efetch(db="protein", id=accessionNum, rettype="fasta", retmode="text")
 data = download_handle.read()
